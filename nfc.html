@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ma Carte NFC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background-size: cover;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      color: #333;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      padding: 24px;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+      position: relative;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin: -80px auto 12px;
+      background: #eee;
+      display: block;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 6px;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: #666;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 14px;
+      font-size: 1rem;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Photo de profil" class="avatar">
+    <h1>Jean Dupont</h1>
+    <p>Fondateur de Exemple SARL</p>
+
+    <a href="contact.vcf" class="btn" download="contact.vcf">📇 Ajouter aux contacts</a>
+    <a href="https://www.monsiteexemple.com" class="btn" target="_blank">🌐 Visiter mon site</a>
+    <a href="https://calendly.com/exemple/rdv" class="btn" target="_blank">📅 Prendre un rendez-vous</a>
+  </div>
+
+</body>
+</html>
